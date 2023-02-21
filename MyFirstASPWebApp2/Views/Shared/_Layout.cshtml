@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/default.css" rel="stylesheet" />
+    <link rel="icon" type="image" href="~/img/icons8-forest-50.png" />
+</head>
+
+<body>
+    <nav>
+        <a asp-controller="Razor" asp-action="Index">Home</a>
+        <a asp-controller="Razor" asp-action="form">Calculator</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <script src="~/lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+
+</html>
